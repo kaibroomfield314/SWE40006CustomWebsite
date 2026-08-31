@@ -1,8 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Counter";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1>My Counter App</h1>
+    <p>SWE40006 Task 2.2</p>
+
+    <div class="display-1">@ViewBag.Count</div>
+
+    <a asp-action="Decrement" class="btn btn-primary btn-lg">-1</a>
+    <a asp-action="Increment" class="btn btn-primary btn-lg">+1</a>
+    <a asp-action="Reset" class="btn btn-secondary btn-lg">Reset</a>
+
 </div>
